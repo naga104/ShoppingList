@@ -4,6 +4,7 @@ import (
 	"gorm.io/gorm"
 )
 
+//User has Shoppinglist
 type User struct {
 	gorm.Model
 	UserID        string         `gorm:"type:varchar(30);not null"`

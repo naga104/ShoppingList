@@ -2,6 +2,7 @@ package model
 
 import "gorm.io/gorm"
 
+//ShoppingList has Title
 type ShoppingList struct {
 	gorm.Model
 	Title string `gorm:"not null"`
