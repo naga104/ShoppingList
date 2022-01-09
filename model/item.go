@@ -2,6 +2,7 @@ package model
 
 import "gorm.io/gorm"
 
+//Item has differents categores
 type Item struct {
 	gorm.Model
 	Name           string `gorm:"not null"`
