@@ -2,7 +2,7 @@ package model
 
 import "gorm.io/gorm"
 
-//Item has differents categores
+//Item is used to show  in ShoppingList
 type Item struct {
 	gorm.Model
 	Name           string `gorm:"not null"`

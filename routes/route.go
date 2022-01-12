@@ -7,10 +7,17 @@ import (
 )
 
 var (
-	signupController = new(controller.SignupController)
+	signupController       = new(controller.SignupController)
+	userController         = new(controller.UserController)
+	shoppingListController = new(controller.ShoppingListController)
+	categoryController     = new(controller.CategoryController)
+	itemController         = new(controller.ItemController)
 )
 
-//InitRoutes has UserGroup
+//InitRoutes give connection to database
 func InitRoutes(r *gin.Engine) {
 	UserGroup(r)
+	ShoppingListGroup(r)
+	CategoryGroup(r)
+	ItemGroup(r)
 }
