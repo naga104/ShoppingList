@@ -1,5 +1,5 @@
 [webserver]
-port = 9595
+port = 9999
 
 [logging]
 level = 5 #Debug
